@@ -668,3 +668,59 @@
 2025-11-14 14:15:14,899 - INFO - ==================================================
 2025-11-14 14:15:14,899 - INFO - 🚀 Smart scheduler started
 2025-11-14 14:15:14,899 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-14 14:27:54,083 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 14:27:54,087 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 14:27:54,161 - INFO - 🔍 Checking for missed execution...
+2025-11-14 14:27:54,162 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-14 14:27:54,163 - INFO -    Current time: 2025-11-14 14:27:54
+2025-11-14 14:27:54,163 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-14 14:27:54,164 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-14 14:27:54,165 - INFO - ==================================================
+2025-11-14 14:27:54,166 - INFO - 🚀 Weekly task execution check
+2025-11-14 14:27:54,166 - INFO - 📓 Notebooks: 2
+2025-11-14 14:27:54,167 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-14 14:27:54,168 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 14:27:54,168 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 14:27:54,169 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 14:27:54,169 - INFO - ⏰ Current time: 2025-11-14 14:27:54.169423
+2025-11-14 14:27:54,170 - INFO - 📅 No previous execution found - task will run
+2025-11-14 14:27:54,170 - INFO - ✅ Proceeding with weekly execution
+2025-11-14 14:27:54,170 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-14 14:27:54,171 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 14:27:54,171 - INFO - 🔄 Executing notebook...
+2025-11-14 14:28:43,942 - INFO - ✅ Notebook 1 completed successfully
+2025-11-14 14:28:43,942 - INFO - 📤 Output:
+2025-11-14 14:28:43,942 - INFO -    Already up to date.
+2025-11-14 14:28:43,942 - INFO - 
+📓 [2/2] Running: query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 14:28:43,942 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 14:28:43,948 - INFO - 🔄 Executing notebook...
+2025-11-14 14:28:53,598 - ERROR - ❌ Notebook 2 failed with return code: 1
+2025-11-14 14:28:53,598 - ERROR - 📤 Error output:
+2025-11-14 14:28:53,598 - ERROR -    ✅ Package installation examples shown above!
+2025-11-14 14:28:53,598 - ERROR -    ------------------
+2025-11-14 14:28:53,598 - ERROR -    
+2025-11-14 14:28:53,598 - ERROR -    [1;31m---------------------------------------------------------------------------[0m
+2025-11-14 14:28:53,613 - ERROR -    [1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+2025-11-14 14:28:53,613 - ERROR -    Cell [1;32mIn[1], line 10[0m
+2025-11-14 14:28:53,613 - ERROR -    [0;32m      8[0m [38;5;28;01mimport[39;00m [38;5;21;01msys[39;00m
+2025-11-14 14:28:53,613 - ERROR -    [0;32m      9[0m [38;5;28;01mimport[39;00m [38;5;21;01mrequests[39;00m
+2025-11-14 14:28:53,613 - ERROR -    [1;32m---> 10[0m [38;5;28;01mfrom[39;00m [38;5;21;01mdocx[39;00m [38;5;28;01mimport[39;00m Document
+2025-11-14 14:28:53,613 - ERROR -    [0;32m     11[0m [38;5;28;01mfrom[39;00m [38;5;21;01mdocx[39;00m[38;5;21;01m.[39;00m[38;5;21;01mshared[39;00m [38;5;28;01mimport[39;00m Pt, RGBColor
+2025-11-14 14:28:53,613 - ERROR -    [0;32m     12[0m [38;5;28;01mfrom[39;00m [38;5;21;01mdocx[39;00m[38;5;21;01m.[39;00m[38;5;21;01menum[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtext[39;00m [38;5;28;01mimport[39;00m WD_PARAGRAPH_ALIGNMENT
+2025-11-14 14:28:53,613 - ERROR -    
+2025-11-14 14:28:53,613 - ERROR -    File [1;32m~\miniconda3\Lib\site-packages\docx.py:30[0m
+2025-11-14 14:28:53,613 - ERROR -    [0;32m     27[0m [38;5;28;01mexcept[39;00m [38;5;167;01mImportError[39;00m:
+2025-11-14 14:28:53,613 - ERROR -    [0;32m     28[0m     TAGS [38;5;241m=[39m {}
+2025-11-14 14:28:53,613 - ERROR -    [1;32m---> 30[0m [38;5;28;01mfrom[39;00m [38;5;21;01mexceptions[39;00m [38;5;28;01mimport[39;00m [38;5;167;01mPendingDeprecationWarning[39;00m
+2025-11-14 14:28:53,613 - ERROR -    [0;32m     31[0m [38;5;28;01mfrom[39;00m [38;5;21;01mwarnings[39;00m [38;5;28;01mimport[39;00m warn
+2025-11-14 14:28:53,613 - ERROR -    [0;32m     33[0m [38;5;28;01mimport[39;00m [38;5;21;01mlogging[39;00m
+2025-11-14 14:28:53,613 - ERROR -    
+2025-11-14 14:28:53,613 - ERROR -    [1;31mModuleNotFoundError[0m: No module named 'exceptions'
+2025-11-14 14:28:53,620 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-14 14:28:53,620 - INFO - 🏁 Weekly task execution finished
+2025-11-14 14:28:53,620 - INFO - ==================================================
+2025-11-14 14:28:53,620 - INFO - 🚀 Smart scheduler started
+2025-11-14 14:28:53,620 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00

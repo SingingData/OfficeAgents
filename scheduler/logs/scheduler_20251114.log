@@ -315,3 +315,251 @@
 2025-11-14 13:29:01,261 - INFO - ==================================================
 2025-11-14 13:29:01,263 - INFO - 🚀 Smart scheduler started
 2025-11-14 13:29:01,263 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-14 13:38:24,069 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:38:24,069 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:38:24,165 - INFO - 🔍 Checking for missed execution...
+2025-11-14 13:38:24,165 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-14 13:38:24,165 - INFO -    Current time: 2025-11-14 13:38:24
+2025-11-14 13:38:24,165 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-14 13:38:24,165 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-14 13:38:24,165 - INFO - ==================================================
+2025-11-14 13:38:24,165 - INFO - 🚀 Weekly task execution check
+2025-11-14 13:38:24,165 - INFO - 📓 Notebooks: 2
+2025-11-14 13:38:24,181 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-14 13:38:24,181 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 13:38:24,181 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:38:24,181 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:38:24,181 - INFO - ⏰ Current time: 2025-11-14 13:38:24.181632
+2025-11-14 13:38:24,181 - INFO - 📅 No previous execution found - task will run
+2025-11-14 13:38:24,181 - INFO - ✅ Proceeding with weekly execution
+2025-11-14 13:38:24,181 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-14 13:38:24,181 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:38:24,181 - INFO - 🔄 Executing notebook...
+2025-11-14 13:38:36,246 - ERROR - ❌ Notebook 1 failed with return code: 1
+2025-11-14 13:38:36,246 - ERROR - 📤 Error output:
+2025-11-14 13:38:36,246 - ERROR -    [0;32m     78[0m [38;5;28;01mfrom[39;00m [38;5;21;01mtime[39;00m [38;5;28;01mimport[39;00m time
+2025-11-14 13:38:36,246 - ERROR -    [0;32m     79[0m np[38;5;241m.[39mrandom[38;5;241m.[39mseed([38;5;241m10[39m)
+2025-11-14 13:38:36,246 - ERROR -    
+2025-11-14 13:38:36,246 - ERROR -    File [1;32m~\miniconda3\envs\lerobot\Lib\site-packages\numpy\__init__.py:132[0m
+2025-11-14 13:38:36,246 - ERROR -    [0;32m    128[0m [38;5;28;01mexcept[39;00m [38;5;167;01mImportError[39;00m [38;5;28;01mas[39;00m e:
+2025-11-14 13:38:36,246 - ERROR -    [0;32m    129[0m     msg [38;5;241m=[39m [38;5;124m"""[39m[38;5;124mError importing numpy: you should not try to import numpy from[39m
+2025-11-14 13:38:36,246 - ERROR -    [0;32m    130[0m [38;5;124m    its source directory; please exit the numpy source tree, and relaunch[39m
+2025-11-14 13:38:36,246 - ERROR -    [0;32m    131[0m [38;5;124m    your python interpreter from there.[39m[38;5;124m"""[39m
+2025-11-14 13:38:36,246 - ERROR -    [1;32m--> 132[0m     [38;5;28;01mraise[39;00m [38;5;167;01mImportError[39;00m(msg) [38;5;28;01mfrom[39;00m [38;5;21;01me[39;00m
+2025-11-14 13:38:36,246 - ERROR -    [0;32m    134[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m [38;5;28;01mimport[39;00m _core
+2025-11-14 13:38:36,246 - ERROR -    [0;32m    135[0m [38;5;28;01mfrom[39;00m [38;5;21;01m.[39;00m[38;5;21;01m_core[39;00m [38;5;28;01mimport[39;00m (
+2025-11-14 13:38:36,246 - ERROR -    [0;32m    136[0m     False_, ScalarType, True_,
+2025-11-14 13:38:36,246 - ERROR -    [0;32m    137[0m     [38;5;28mabs[39m, absolute, acos, acosh, add, [38;5;28mall[39m, allclose,
+2025-11-14 13:38:36,246 - ERROR -    [1;32m   (...)[0m
+2025-11-14 13:38:36,246 - ERROR -    [0;32m    182[0m     vecmat, void, vstack, where, zeros, zeros_like
+2025-11-14 13:38:36,246 - ERROR -    [0;32m    183[0m )
+2025-11-14 13:38:36,246 - ERROR -    
+2025-11-14 13:38:36,246 - ERROR -    [1;31mImportError[0m: Error importing numpy: you should not try to import numpy from
+2025-11-14 13:38:36,246 - ERROR -            its source directory; please exit the numpy source tree, and relaunch
+2025-11-14 13:38:36,246 - ERROR -            your python interpreter from there.
+2025-11-14 13:38:36,246 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-14 13:38:36,246 - INFO - 🏁 Weekly task execution finished
+2025-11-14 13:38:36,246 - INFO - ==================================================
+2025-11-14 13:38:36,246 - INFO - 🚀 Smart scheduler started
+2025-11-14 13:38:36,246 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-14 13:41:27,184 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:41:27,187 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:41:27,268 - INFO - 🔍 Checking for missed execution...
+2025-11-14 13:41:27,271 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-14 13:41:27,271 - INFO -    Current time: 2025-11-14 13:41:27
+2025-11-14 13:41:27,271 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-14 13:41:27,272 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-14 13:41:27,272 - INFO - ==================================================
+2025-11-14 13:41:27,272 - INFO - 🚀 Weekly task execution check
+2025-11-14 13:41:27,273 - INFO - 📓 Notebooks: 2
+2025-11-14 13:41:27,273 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-14 13:41:27,273 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 13:41:27,273 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:41:27,273 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:41:27,274 - INFO - ⏰ Current time: 2025-11-14 13:41:27.273246
+2025-11-14 13:41:27,274 - INFO - 📅 No previous execution found - task will run
+2025-11-14 13:41:27,274 - INFO - ✅ Proceeding with weekly execution
+2025-11-14 13:41:27,274 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-14 13:41:27,275 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:41:27,275 - INFO - 🔄 Executing notebook...
+2025-11-14 13:42:21,645 - ERROR - ❌ Notebook 1 failed with return code: 1
+2025-11-14 13:42:21,645 - ERROR - 📤 Error output:
+2025-11-14 13:42:21,645 - ERROR -    C:\Users\patty\OfficeAgents_new\OfficeAgents\Integrated-portfolio-analysis_2025-11-14.ipynb
+2025-11-14 13:42:21,645 - ERROR -    ------------------
+2025-11-14 13:42:21,646 - ERROR -    
+2025-11-14 13:42:21,646 - ERROR -    [1;31m---------------------------------------------------------------------------[0m
+2025-11-14 13:42:21,646 - ERROR -    [1;31mFileNotFoundError[0m                         Traceback (most recent call last)
+2025-11-14 13:42:21,647 - ERROR -    Cell [1;32mIn[14], line 20[0m
+2025-11-14 13:42:21,647 - ERROR -    [0;32m     18[0m [38;5;28;01mimport[39;00m [38;5;21;01mshutil[39;00m
+2025-11-14 13:42:21,647 - ERROR -    [0;32m     19[0m current_file [38;5;241m=[39m [38;5;124m"[39m[38;5;124mIntegrated-portfolio-analysis.ipynb[39m[38;5;124m"[39m
+2025-11-14 13:42:21,647 - ERROR -    [1;32m---> 20[0m [43mshutil[49m[38;5;241;43m.[39;49m[43mcopy2[49m[43m([49m[43mcurrent_file[49m[43m,[49m[43m [49m[43mdated_file[49m[43m)[49m
+2025-11-14 13:42:21,648 - ERROR -    [0;32m     21[0m [38;5;28mprint[39m([38;5;124mf[39m[38;5;124m"[39m[38;5;124m\u2705 Created: [39m[38;5;132;01m{[39;00mdated_filename[38;5;132;01m}[39;00m[38;5;124m"[39m)
+2025-11-14 13:42:21,648 - ERROR -    [0;32m     24[0m [38;5;28;01mfrom[39;00m [38;5;21;01mdatetime[39;00m [38;5;28;01mimport[39;00m datetime
+2025-11-14 13:42:21,648 - ERROR -    
+2025-11-14 13:42:21,648 - ERROR -    File [1;32m~\miniconda3\Lib\shutil.py:460[0m, in [0;36mcopy2[1;34m(src, dst, follow_symlinks)[0m
+2025-11-14 13:42:21,648 - ERROR -    [0;32m    458[0m     flags [38;5;241m|[39m[38;5;241m=[39m _winapi[38;5;241m.[39mCOPY_FILE_COPY_SYMLINK
+2025-11-14 13:42:21,648 - ERROR -    [0;32m    459[0m [38;5;28;01mtry[39;00m:
+2025-11-14 13:42:21,648 - ERROR -    [1;32m--> 460[0m     [43m_winapi[49m[38;5;241;43m.[39;49m[43mCopyFile2[49m[43m([49m[43msrc_[49m[43m,[49m[43m [49m[43mdst_[49m[43m,[49m[43m [49m[43mflags[49m[43m)[49m
+2025-11-14 13:42:21,648 - ERROR -    [0;32m    461[0m     [38;5;28;01mreturn[39;00m dst
+2025-11-14 13:42:21,651 - ERROR -    [0;32m    462[0m [38;5;28;01mexcept[39;00m [38;5;167;01mOSError[39;00m [38;5;28;01mas[39;00m exc:
+2025-11-14 13:42:21,651 - ERROR -    
+2025-11-14 13:42:21,651 - ERROR -    [1;31mFileNotFoundError[0m: [WinError 2] The system cannot find the file specified
+2025-11-14 13:42:21,651 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-14 13:42:21,651 - INFO - 🏁 Weekly task execution finished
+2025-11-14 13:42:21,652 - INFO - ==================================================
+2025-11-14 13:42:21,653 - INFO - 🚀 Smart scheduler started
+2025-11-14 13:42:21,654 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-14 13:45:03,811 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:45:03,813 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:45:03,900 - INFO - 🔍 Checking for missed execution...
+2025-11-14 13:45:03,901 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-14 13:45:03,902 - INFO -    Current time: 2025-11-14 13:45:03
+2025-11-14 13:45:03,902 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-14 13:45:03,902 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-14 13:45:03,904 - INFO - ==================================================
+2025-11-14 13:45:03,905 - INFO - 🚀 Weekly task execution check
+2025-11-14 13:45:03,905 - INFO - 📓 Notebooks: 2
+2025-11-14 13:45:03,906 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-14 13:45:03,906 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 13:45:03,907 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:45:03,907 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:45:03,907 - INFO - ⏰ Current time: 2025-11-14 13:45:03.907552
+2025-11-14 13:45:03,908 - INFO - 📅 No previous execution found - task will run
+2025-11-14 13:45:03,908 - INFO - ✅ Proceeding with weekly execution
+2025-11-14 13:45:03,909 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-14 13:45:03,910 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:45:03,911 - INFO - 🔄 Executing notebook...
+2025-11-14 13:45:49,699 - ERROR - ❌ Notebook 1 failed with return code: 1
+2025-11-14 13:45:49,699 - ERROR - 📤 Error output:
+2025-11-14 13:45:49,699 - ERROR -    C:\Users\patty\OfficeAgents_new\OfficeAgents\Integrated-portfolio-analysis_2025-11-14.ipynb
+2025-11-14 13:45:49,699 - ERROR -    ------------------
+2025-11-14 13:45:49,699 - ERROR -    
+2025-11-14 13:45:49,699 - ERROR -    [1;31m---------------------------------------------------------------------------[0m
+2025-11-14 13:45:49,699 - ERROR -    [1;31mFileNotFoundError[0m                         Traceback (most recent call last)
+2025-11-14 13:45:49,699 - ERROR -    Cell [1;32mIn[14], line 20[0m
+2025-11-14 13:45:49,699 - ERROR -    [0;32m     18[0m [38;5;28;01mimport[39;00m [38;5;21;01mshutil[39;00m
+2025-11-14 13:45:49,715 - ERROR -    [0;32m     19[0m current_file [38;5;241m=[39m [38;5;124m"[39m[38;5;124mIntegrated-portfolio-analysis.ipynb[39m[38;5;124m"[39m
+2025-11-14 13:45:49,715 - ERROR -    [1;32m---> 20[0m [43mshutil[49m[38;5;241;43m.[39;49m[43mcopy2[49m[43m([49m[43mcurrent_file[49m[43m,[49m[43m [49m[43mdated_file[49m[43m)[49m
+2025-11-14 13:45:49,715 - ERROR -    [0;32m     21[0m [38;5;28mprint[39m([38;5;124mf[39m[38;5;124m"[39m[38;5;124m\u2705 Created: [39m[38;5;132;01m{[39;00mdated_filename[38;5;132;01m}[39;00m[38;5;124m"[39m)
+2025-11-14 13:45:49,715 - ERROR -    [0;32m     24[0m [38;5;28;01mfrom[39;00m [38;5;21;01mdatetime[39;00m [38;5;28;01mimport[39;00m datetime
+2025-11-14 13:45:49,715 - ERROR -    
+2025-11-14 13:45:49,715 - ERROR -    File [1;32m~\miniconda3\Lib\shutil.py:460[0m, in [0;36mcopy2[1;34m(src, dst, follow_symlinks)[0m
+2025-11-14 13:45:49,715 - ERROR -    [0;32m    458[0m     flags [38;5;241m|[39m[38;5;241m=[39m _winapi[38;5;241m.[39mCOPY_FILE_COPY_SYMLINK
+2025-11-14 13:45:49,715 - ERROR -    [0;32m    459[0m [38;5;28;01mtry[39;00m:
+2025-11-14 13:45:49,715 - ERROR -    [1;32m--> 460[0m     [43m_winapi[49m[38;5;241;43m.[39;49m[43mCopyFile2[49m[43m([49m[43msrc_[49m[43m,[49m[43m [49m[43mdst_[49m[43m,[49m[43m [49m[43mflags[49m[43m)[49m
+2025-11-14 13:45:49,715 - ERROR -    [0;32m    461[0m     [38;5;28;01mreturn[39;00m dst
+2025-11-14 13:45:49,715 - ERROR -    [0;32m    462[0m [38;5;28;01mexcept[39;00m [38;5;167;01mOSError[39;00m [38;5;28;01mas[39;00m exc:
+2025-11-14 13:45:49,715 - ERROR -    
+2025-11-14 13:45:49,715 - ERROR -    [1;31mFileNotFoundError[0m: [WinError 2] The system cannot find the file specified
+2025-11-14 13:45:49,715 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-14 13:45:49,715 - INFO - 🏁 Weekly task execution finished
+2025-11-14 13:45:49,715 - INFO - ==================================================
+2025-11-14 13:45:49,715 - INFO - 🚀 Smart scheduler started
+2025-11-14 13:45:49,715 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-14 13:47:34,400 - INFO - 🛑 Scheduler stopped by user
+2025-11-14 13:48:28,464 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:48:28,466 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:48:28,537 - INFO - 🔍 Checking for missed execution...
+2025-11-14 13:48:28,537 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-14 13:48:28,537 - INFO -    Current time: 2025-11-14 13:48:28
+2025-11-14 13:48:28,537 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-14 13:48:28,538 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-14 13:48:28,538 - INFO - ==================================================
+2025-11-14 13:48:28,538 - INFO - 🚀 Weekly task execution check
+2025-11-14 13:48:28,539 - INFO - 📓 Notebooks: 2
+2025-11-14 13:48:28,539 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-14 13:48:28,539 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 13:48:28,539 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:48:28,539 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:48:28,539 - INFO - ⏰ Current time: 2025-11-14 13:48:28.539709
+2025-11-14 13:48:28,540 - INFO - 📅 No previous execution found - task will run
+2025-11-14 13:48:28,540 - INFO - ✅ Proceeding with weekly execution
+2025-11-14 13:48:28,540 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-14 13:48:28,540 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:48:28,541 - INFO - 🔄 Executing notebook...
+2025-11-14 13:49:15,130 - ERROR - ❌ Notebook 1 failed with return code: 1
+2025-11-14 13:49:15,130 - ERROR - 📤 Error output:
+2025-11-14 13:49:15,130 - ERROR -    C:\Users\patty\OfficeAgents_new\OfficeAgents\Integrated-portfolio-analysis_2025-11-14.ipynb
+2025-11-14 13:49:15,130 - ERROR -    ------------------
+2025-11-14 13:49:15,130 - ERROR -    
+2025-11-14 13:49:15,130 - ERROR -    [1;31m---------------------------------------------------------------------------[0m
+2025-11-14 13:49:15,135 - ERROR -    [1;31mFileNotFoundError[0m                         Traceback (most recent call last)
+2025-11-14 13:49:15,135 - ERROR -    Cell [1;32mIn[14], line 20[0m
+2025-11-14 13:49:15,135 - ERROR -    [0;32m     18[0m [38;5;28;01mimport[39;00m [38;5;21;01mshutil[39;00m
+2025-11-14 13:49:15,135 - ERROR -    [0;32m     19[0m current_file [38;5;241m=[39m [38;5;124m"[39m[38;5;124mIntegrated-portfolio-analysis.ipynb[39m[38;5;124m"[39m
+2025-11-14 13:49:15,135 - ERROR -    [1;32m---> 20[0m [43mshutil[49m[38;5;241;43m.[39;49m[43mcopy2[49m[43m([49m[43mcurrent_file[49m[43m,[49m[43m [49m[43mdated_file[49m[43m)[49m
+2025-11-14 13:49:15,135 - ERROR -    [0;32m     21[0m [38;5;28mprint[39m([38;5;124mf[39m[38;5;124m"[39m[38;5;124m\u2705 Created: [39m[38;5;132;01m{[39;00mdated_filename[38;5;132;01m}[39;00m[38;5;124m"[39m)
+2025-11-14 13:49:15,135 - ERROR -    [0;32m     24[0m [38;5;28;01mfrom[39;00m [38;5;21;01mdatetime[39;00m [38;5;28;01mimport[39;00m datetime
+2025-11-14 13:49:15,135 - ERROR -    
+2025-11-14 13:49:15,135 - ERROR -    File [1;32m~\miniconda3\Lib\shutil.py:460[0m, in [0;36mcopy2[1;34m(src, dst, follow_symlinks)[0m
+2025-11-14 13:49:15,135 - ERROR -    [0;32m    458[0m     flags [38;5;241m|[39m[38;5;241m=[39m _winapi[38;5;241m.[39mCOPY_FILE_COPY_SYMLINK
+2025-11-14 13:49:15,135 - ERROR -    [0;32m    459[0m [38;5;28;01mtry[39;00m:
+2025-11-14 13:49:15,135 - ERROR -    [1;32m--> 460[0m     [43m_winapi[49m[38;5;241;43m.[39;49m[43mCopyFile2[49m[43m([49m[43msrc_[49m[43m,[49m[43m [49m[43mdst_[49m[43m,[49m[43m [49m[43mflags[49m[43m)[49m
+2025-11-14 13:49:15,135 - ERROR -    [0;32m    461[0m     [38;5;28;01mreturn[39;00m dst
+2025-11-14 13:49:15,135 - ERROR -    [0;32m    462[0m [38;5;28;01mexcept[39;00m [38;5;167;01mOSError[39;00m [38;5;28;01mas[39;00m exc:
+2025-11-14 13:49:15,135 - ERROR -    
+2025-11-14 13:49:15,135 - ERROR -    [1;31mFileNotFoundError[0m: [WinError 2] The system cannot find the file specified
+2025-11-14 13:49:15,135 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-14 13:49:15,135 - INFO - 🏁 Weekly task execution finished
+2025-11-14 13:49:15,140 - INFO - ==================================================
+2025-11-14 13:49:15,140 - INFO - 🚀 Smart scheduler started
+2025-11-14 13:49:15,140 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-14 13:51:58,136 - INFO - 🛑 Scheduler stopped by user
+2025-11-14 13:52:42,916 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:52:42,918 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:52:42,974 - INFO - 🔍 Checking for missed execution...
+2025-11-14 13:52:42,974 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-14 13:52:42,975 - INFO -    Current time: 2025-11-14 13:52:42
+2025-11-14 13:52:42,976 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-14 13:52:42,976 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-14 13:52:42,976 - INFO - ==================================================
+2025-11-14 13:52:42,976 - INFO - 🚀 Weekly task execution check
+2025-11-14 13:52:42,976 - INFO - 📓 Notebooks: 2
+2025-11-14 13:52:42,976 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-14 13:52:42,976 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 13:52:42,977 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:52:42,977 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:52:42,977 - INFO - ⏰ Current time: 2025-11-14 13:52:42.977803
+2025-11-14 13:52:42,977 - INFO - 📅 No previous execution found - task will run
+2025-11-14 13:52:42,977 - INFO - ✅ Proceeding with weekly execution
+2025-11-14 13:52:42,977 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-14 13:52:42,979 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:52:42,979 - INFO - 🔄 Executing notebook...
+2025-11-14 13:53:33,075 - ERROR - ❌ Notebook 1 failed with return code: 1
+2025-11-14 13:53:33,079 - ERROR - 📤 Error output:
+2025-11-14 13:53:33,079 - ERROR -    C:\Users\patty\OfficeAgents_new\OfficeAgents\Integrated-portfolio-analysis_2025-11-14.ipynb
+2025-11-14 13:53:33,079 - ERROR -    ------------------
+2025-11-14 13:53:33,079 - ERROR -    
+2025-11-14 13:53:33,079 - ERROR -    [1;31m---------------------------------------------------------------------------[0m
+2025-11-14 13:53:33,079 - ERROR -    [1;31mFileNotFoundError[0m                         Traceback (most recent call last)
+2025-11-14 13:53:33,079 - ERROR -    Cell [1;32mIn[14], line 20[0m
+2025-11-14 13:53:33,079 - ERROR -    [0;32m     18[0m [38;5;28;01mimport[39;00m [38;5;21;01mshutil[39;00m
+2025-11-14 13:53:33,079 - ERROR -    [0;32m     19[0m current_file [38;5;241m=[39m [38;5;124m"[39m[38;5;124mIntegrated-portfolio-analysis.ipynb[39m[38;5;124m"[39m
+2025-11-14 13:53:33,079 - ERROR -    [1;32m---> 20[0m [43mshutil[49m[38;5;241;43m.[39;49m[43mcopy2[49m[43m([49m[43mcurrent_file[49m[43m,[49m[43m [49m[43mdated_file[49m[43m)[49m
+2025-11-14 13:53:33,079 - ERROR -    [0;32m     21[0m [38;5;28mprint[39m([38;5;124mf[39m[38;5;124m"[39m[38;5;124m\u2705 Created: [39m[38;5;132;01m{[39;00mdated_filename[38;5;132;01m}[39;00m[38;5;124m"[39m)
+2025-11-14 13:53:33,079 - ERROR -    [0;32m     24[0m [38;5;28;01mfrom[39;00m [38;5;21;01mdatetime[39;00m [38;5;28;01mimport[39;00m datetime
+2025-11-14 13:53:33,079 - ERROR -    
+2025-11-14 13:53:33,079 - ERROR -    File [1;32m~\miniconda3\Lib\shutil.py:460[0m, in [0;36mcopy2[1;34m(src, dst, follow_symlinks)[0m
+2025-11-14 13:53:33,079 - ERROR -    [0;32m    458[0m     flags [38;5;241m|[39m[38;5;241m=[39m _winapi[38;5;241m.[39mCOPY_FILE_COPY_SYMLINK
+2025-11-14 13:53:33,079 - ERROR -    [0;32m    459[0m [38;5;28;01mtry[39;00m:
+2025-11-14 13:53:33,079 - ERROR -    [1;32m--> 460[0m     [43m_winapi[49m[38;5;241;43m.[39;49m[43mCopyFile2[49m[43m([49m[43msrc_[49m[43m,[49m[43m [49m[43mdst_[49m[43m,[49m[43m [49m[43mflags[49m[43m)[49m
+2025-11-14 13:53:33,079 - ERROR -    [0;32m    461[0m     [38;5;28;01mreturn[39;00m dst
+2025-11-14 13:53:33,083 - ERROR -    [0;32m    462[0m [38;5;28;01mexcept[39;00m [38;5;167;01mOSError[39;00m [38;5;28;01mas[39;00m exc:
+2025-11-14 13:53:33,083 - ERROR -    
+2025-11-14 13:53:33,083 - ERROR -    [1;31mFileNotFoundError[0m: [WinError 2] The system cannot find the file specified
+2025-11-14 13:53:33,083 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-14 13:53:33,083 - INFO - 🏁 Weekly task execution finished
+2025-11-14 13:53:33,083 - INFO - ==================================================
+2025-11-14 13:53:33,085 - INFO - 🚀 Smart scheduler started
+2025-11-14 13:53:33,085 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-14 13:57:36,339 - INFO - 🛑 Scheduler stopped by user

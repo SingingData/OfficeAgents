@@ -119,8 +119,10 @@ class SmartVenvScheduler:
         current_path = env.get("PATH", "")
         env["PATH"] = f"{venv_scripts};{current_path}"
         
-        # Set Python path
-        env["PYTHONPATH"] = str(Path(VENV_PATH) / "Lib" / "site-packages")
+        # Clear PYTHONPATH to avoid importing from wrong directories (especially lerobot/src)
+        # This prevents numpy import conflicts from source directories
+        if "PYTHONPATH" in env:
+            del env["PYTHONPATH"]
         
         logging.info(f"✓ Environment prepared for virtual environment: {VENV_PATH}")
         return env
@@ -240,10 +242,13 @@ class SmartVenvScheduler:
                 # Prepare virtual environment
                 env = self.prepare_venv_environment()
                 
-                # Get absolute path to notebook
+                # Get absolute path to notebook and its directory
                 notebook_abs = os.path.abspath(notebook_path)
+                notebook_dir = os.path.dirname(notebook_abs)
+                notebook_name = os.path.basename(notebook_abs)
                 
-                # Execute notebook using jupyter nbconvert (run from scheduler dir, not notebook dir)
+                # Execute notebook using jupyter nbconvert
+                # Must run from notebook directory for relative paths to work
                 logging.info(f"🔄 Executing notebook...")
                 result = subprocess.run([
                     self.python_exe,
@@ -251,14 +256,14 @@ class SmartVenvScheduler:
                     "--to", "notebook",
                     "--execute",
                     "--inplace",
-                    notebook_abs
+                    notebook_name  # Use just the filename since we're running from notebook dir
                 ], 
                 capture_output=True, 
                 text=True, 
                 encoding='utf-8',
                 errors='replace',
                 timeout=3600,  # 1 hour timeout per notebook
-                cwd=os.path.dirname(__file__),  # Run from scheduler directory to avoid import conflicts
+                cwd=notebook_dir,  # Run from notebook directory so relative paths work
                 env=env
                 )
                 

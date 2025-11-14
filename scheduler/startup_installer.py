@@ -30,7 +30,22 @@ cd /d "{script_dir}"
 """
     
     if venv_path:
-        batch_content += f"""REM Activate virtual environment
+        # Check if it's a conda environment
+        if "envs" in venv_path or "miniconda" in venv_path.lower() or "anaconda" in venv_path.lower():
+            env_name = Path(venv_path).name
+            batch_content += f"""REM Activate conda environment
+call conda activate {env_name}
+if errorlevel 1 (
+    echo ERROR: Failed to activate conda environment
+    echo Environment: {env_name}
+    timeout /t 30
+    exit /b 1
+)
+
+"""
+        else:
+            # Regular virtual environment
+            batch_content += f"""REM Activate virtual environment
 call "{venv_path}\\Scripts\\activate.bat"
 if errorlevel 1 (
     echo ERROR: Failed to activate virtual environment

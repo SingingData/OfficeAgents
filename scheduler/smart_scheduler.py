@@ -18,14 +18,14 @@ import json
 # ============================================================================
 
 # Your multi-task agent script to run weekly
-SCRIPT_PATH = r"C:\path\to\your\multi_task_agent.py"
+SCRIPT_PATH = r"C:\Users\patty\OfficeAgents_new\OfficeAgents\scheduler\smart_scheduler.py"
 
 # Virtual environment path (REQUIRED for reliable execution)
-VENV_PATH = r"C:\path\to\your\venv"
+VENV_PATH = r"C:\Users\patty\miniconda3\lerobot"
 
 # Schedule settings - Multi-task agent runs once weekly
-SCHEDULE_DAY = "tuesday"   # tuesday at 7am
-SCHEDULE_TIME = "07:00"    # 7:00 AM
+SCHEDULE_DAY = "friday"  
+SCHEDULE_TIME = "12:10"  
 
 # ============================================================================
 # SMART SCHEDULER - VIRTUAL ENVIRONMENT FOCUSED

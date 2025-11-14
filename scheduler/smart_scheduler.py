@@ -240,10 +240,10 @@ class SmartVenvScheduler:
                 # Prepare virtual environment
                 env = self.prepare_venv_environment()
                 
-                # Change to notebook directory
-                notebook_dir = os.path.dirname(notebook_path)
+                # Get absolute path to notebook
+                notebook_abs = os.path.abspath(notebook_path)
                 
-                # Execute notebook using jupyter nbconvert
+                # Execute notebook using jupyter nbconvert (run from scheduler dir, not notebook dir)
                 logging.info(f"🔄 Executing notebook...")
                 result = subprocess.run([
                     self.python_exe,
@@ -251,14 +251,14 @@ class SmartVenvScheduler:
                     "--to", "notebook",
                     "--execute",
                     "--inplace",
-                    notebook_path
+                    notebook_abs
                 ], 
                 capture_output=True, 
                 text=True, 
                 encoding='utf-8',
                 errors='replace',
                 timeout=3600,  # 1 hour timeout per notebook
-                cwd=notebook_dir,
+                cwd=os.path.dirname(__file__),  # Run from scheduler directory to avoid import conflicts
                 env=env
                 )
                 

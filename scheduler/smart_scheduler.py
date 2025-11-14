@@ -255,6 +255,8 @@ class SmartVenvScheduler:
                 ], 
                 capture_output=True, 
                 text=True, 
+                encoding='utf-8',
+                errors='replace',
                 timeout=3600,  # 1 hour timeout per notebook
                 cwd=notebook_dir,
                 env=env
@@ -263,13 +265,13 @@ class SmartVenvScheduler:
                 # Log results
                 if result.returncode == 0:
                     logging.info(f"✅ Notebook {i} completed successfully")
-                    if result.stdout.strip():
+                    if result.stdout and result.stdout.strip():
                         logging.info("📤 Output:")
                         for line in result.stdout.strip().split('\n')[-10:]:  # Last 10 lines
                             logging.info(f"   {line}")
                 else:
                     logging.error(f"❌ Notebook {i} failed with return code: {result.returncode}")
-                    if result.stderr.strip():
+                    if result.stderr and result.stderr.strip():
                         logging.error("📤 Error output:")
                         for line in result.stderr.strip().split('\n')[-20:]:  # Last 20 lines
                             logging.error(f"   {line}")

@@ -236,3 +236,33 @@
 📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
 2025-11-14 13:05:58,495 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
 2025-11-14 13:05:58,495 - INFO - 🔄 Executing notebook...
+2025-11-14 13:17:42,215 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:17:42,231 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:17:42,341 - INFO - 🔍 Checking for missed execution...
+2025-11-14 13:17:42,341 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-14 13:17:42,341 - INFO -    Current time: 2025-11-14 13:17:42
+2025-11-14 13:17:42,341 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-14 13:17:42,341 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-14 13:17:42,341 - INFO - ==================================================
+2025-11-14 13:17:42,341 - INFO - 🚀 Weekly task execution check
+2025-11-14 13:17:42,341 - INFO - 📓 Notebooks: 2
+2025-11-14 13:17:42,341 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-14 13:17:42,341 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 13:17:42,341 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:17:42,341 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:17:42,341 - INFO - ⏰ Current time: 2025-11-14 13:17:42.341882
+2025-11-14 13:17:42,341 - INFO - 📅 No previous execution found - task will run
+2025-11-14 13:17:42,341 - INFO - ✅ Proceeding with weekly execution
+2025-11-14 13:17:42,341 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-14 13:17:42,341 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:17:42,341 - INFO - 🔄 Executing notebook...
+2025-11-14 13:17:59,246 - ERROR - ❌ Notebook 1 failed with return code: 1
+2025-11-14 13:17:59,246 - ERROR - 💥 Unexpected error executing notebook 1: 'NoneType' object has no attribute 'strip'
+2025-11-14 13:17:59,246 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-14 13:17:59,246 - INFO - 🏁 Weekly task execution finished
+2025-11-14 13:17:59,246 - INFO - ==================================================
+2025-11-14 13:17:59,246 - INFO - 🚀 Smart scheduler started
+2025-11-14 13:17:59,246 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-14 13:18:28,253 - INFO - 🛑 Scheduler stopped by user

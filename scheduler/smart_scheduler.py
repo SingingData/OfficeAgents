@@ -17,11 +17,14 @@ import json
 # CONFIGURATION - EDIT THESE VALUES
 # ============================================================================
 
-# Your multi-task agent script to run weekly
-SCRIPT_PATH = r"C:\Users\patty\OfficeAgents_new\OfficeAgents\scheduler\smart_scheduler.py"
+# Your notebooks to run weekly (in order)
+NOTEBOOKS = [
+    r"C:\Users\patty\OfficeAgents_new\OfficeAgents\analysis_scripts\Integrated-portfolio-analysis.ipynb",
+    r"C:\Users\patty\OfficeAgents_new\OfficeAgents\analysis_scripts\query-perplexity-llm-stock-analysis.ipynb"
+]
 
 # Virtual environment path (REQUIRED for reliable execution)
-VENV_PATH = r"C:\Users\patty\miniconda3\lerobot"
+VENV_PATH = r"C:\Users\patty\miniconda3\envs\lerobot"
 
 # Schedule settings - Multi-task agent runs once weekly
 SCHEDULE_DAY = "friday"  
@@ -47,7 +50,7 @@ class SmartVenvScheduler:
             level=logging.INFO,
             format='%(asctime)s - %(levelname)s - %(message)s',
             handlers=[
-                logging.FileHandler(log_file),
+                logging.FileHandler(log_file, encoding='utf-8'),
                 logging.StreamHandler()
             ]
         )
@@ -57,10 +60,12 @@ class SmartVenvScheduler:
         errors = []
         
         # Check script path
-        if not SCRIPT_PATH or SCRIPT_PATH == r"C:\path\to\your\weekly_script.py":
-            errors.append("❌ SCRIPT_PATH not configured")
-        elif not os.path.exists(SCRIPT_PATH):
-            errors.append(f"❌ Script not found: {SCRIPT_PATH}")
+        if not NOTEBOOKS:
+            errors.append("❌ NOTEBOOKS not configured")
+        else:
+            for notebook in NOTEBOOKS:
+                if not os.path.exists(notebook):
+                    errors.append(f"❌ Notebook not found: {notebook}")
             
         # Check virtual environment
         if not VENV_PATH or VENV_PATH == r"C:\path\to\your\venv":
@@ -68,10 +73,11 @@ class SmartVenvScheduler:
         elif not os.path.exists(VENV_PATH):
             errors.append(f"❌ Virtual environment not found: {VENV_PATH}")
         else:
-            # Check for Python executable in venv
+            # Check for Python executable (conda uses root, venv uses Scripts)
+            conda_python = Path(VENV_PATH) / "python.exe"
             venv_python = Path(VENV_PATH) / "Scripts" / "python.exe"
-            if not venv_python.exists():
-                errors.append(f"❌ Python executable not found in venv: {venv_python}")
+            if not conda_python.exists() and not venv_python.exists():
+                errors.append(f"❌ Python executable not found in: {VENV_PATH}")
         
         if errors:
             print("Configuration Errors:")
@@ -83,14 +89,20 @@ class SmartVenvScheduler:
     
     def get_venv_python(self):
         """Get the Python executable from the virtual environment"""
-        venv_python = Path(VENV_PATH) / "Scripts" / "python.exe"
+        # Check conda location first (root directory)
+        conda_python = Path(VENV_PATH) / "python.exe"
+        if conda_python.exists():
+            logging.info(f"✓ Using conda environment Python: {conda_python}")
+            return str(conda_python)
         
+        # Check venv location (Scripts directory)
+        venv_python = Path(VENV_PATH) / "Scripts" / "python.exe"
         if venv_python.exists():
             logging.info(f"✓ Using virtual environment Python: {venv_python}")
             return str(venv_python)
-        else:
-            logging.error(f"❌ Python not found in virtual environment: {venv_python}")
-            raise FileNotFoundError(f"Virtual environment Python not found: {venv_python}")
+        
+        logging.error(f"❌ Python not found in: {VENV_PATH}")
+        raise FileNotFoundError(f"Python executable not found in environment: {VENV_PATH}")
     
     def prepare_venv_environment(self):
         """Prepare environment variables for virtual environment execution"""
@@ -128,7 +140,7 @@ class SmartVenvScheduler:
         try:
             data = {
                 'last_execution': datetime.now().isoformat(),
-                'script_path': SCRIPT_PATH,
+                'notebooks': NOTEBOOKS,
                 'schedule': f"{SCHEDULE_DAY} at {SCHEDULE_TIME}"
             }
             with open(self.execution_log_file, 'w') as f:
@@ -199,10 +211,12 @@ class SmartVenvScheduler:
             return False
     
     def run_weekly_task(self):
-        """Execute the weekly task in the virtual environment (with weekly frequency protection)"""
+        """Execute the weekly notebooks in sequence (with weekly frequency protection)"""
         logging.info("=" * 50)
         logging.info("🚀 Weekly task execution check")
-        logging.info(f"📄 Multi-task agent: {SCRIPT_PATH}")
+        logging.info(f"📓 Notebooks: {len(NOTEBOOKS)}")
+        for i, nb in enumerate(NOTEBOOKS, 1):
+            logging.info(f"   {i}. {os.path.basename(nb)}")
         logging.info(f"🐍 Python: {self.python_exe}")
         logging.info(f"📁 Virtual env: {VENV_PATH}")
         logging.info(f"⏰ Current time: {datetime.now()}")
@@ -215,53 +229,66 @@ class SmartVenvScheduler:
         
         logging.info("✅ Proceeding with weekly execution")
         
-        try:
-            # Prepare virtual environment
-            env = self.prepare_venv_environment()
-            
-            # Change to script directory for relative imports/paths
-            script_dir = os.path.dirname(SCRIPT_PATH) or os.getcwd()
-            
-            # Execute the multi-task agent
-            logging.info("🤖 Starting multi-task agent execution...")
-            result = subprocess.run([
-                self.python_exe,
-                SCRIPT_PATH
-            ], 
-            capture_output=True, 
-            text=True, 
-            timeout=3600,  # 1 hour timeout
-            cwd=script_dir,
-            env=env
-            )
-            
-            # Log results
-            if result.returncode == 0:
-                logging.info("✅ Multi-task agent completed successfully")
-                if result.stdout.strip():
-                    logging.info("📤 Agent output:")
-                    for line in result.stdout.strip().split('\n'):
-                        logging.info(f"   {line}")
+        all_successful = True
+        
+        for i, notebook_path in enumerate(NOTEBOOKS, 1):
+            try:
+                logging.info(f"\n📓 [{i}/{len(NOTEBOOKS)}] Running: {os.path.basename(notebook_path)}")
                 
-                # Record successful execution
-                self.record_execution_date()
+                # Prepare virtual environment
+                env = self.prepare_venv_environment()
                 
-            else:
-                logging.error(f"❌ Multi-task agent failed with return code: {result.returncode}")
-                if result.stderr.strip():
-                    logging.error("📤 Error output:")
-                    for line in result.stderr.strip().split('\n'):
-                        logging.error(f"   {line}")
+                # Change to notebook directory
+                notebook_dir = os.path.dirname(notebook_path)
                 
-                # Don't record execution date on failure - allow retry next time
-                logging.info("⚠️  Execution date not recorded due to failure - will retry next scheduled time")
-                        
-        except subprocess.TimeoutExpired:
-            logging.error("⏰ Multi-task agent timed out after 1 hour")
-            logging.info("⚠️  Execution date not recorded due to timeout - will retry next scheduled time")
-        except Exception as e:
-            logging.error(f"💥 Unexpected error executing multi-task agent: {e}")
-            logging.info("⚠️  Execution date not recorded due to error - will retry next scheduled time")
+                # Execute notebook using jupyter nbconvert
+                logging.info(f"🔄 Executing notebook...")
+                result = subprocess.run([
+                    self.python_exe,
+                    "-m", "jupyter", "nbconvert",
+                    "--to", "notebook",
+                    "--execute",
+                    "--inplace",
+                    notebook_path
+                ], 
+                capture_output=True, 
+                text=True, 
+                timeout=3600,  # 1 hour timeout per notebook
+                cwd=notebook_dir,
+                env=env
+                )
+                
+                # Log results
+                if result.returncode == 0:
+                    logging.info(f"✅ Notebook {i} completed successfully")
+                    if result.stdout.strip():
+                        logging.info("📤 Output:")
+                        for line in result.stdout.strip().split('\n')[-10:]:  # Last 10 lines
+                            logging.info(f"   {line}")
+                else:
+                    logging.error(f"❌ Notebook {i} failed with return code: {result.returncode}")
+                    if result.stderr.strip():
+                        logging.error("📤 Error output:")
+                        for line in result.stderr.strip().split('\n')[-20:]:  # Last 20 lines
+                            logging.error(f"   {line}")
+                    all_successful = False
+                    break  # Stop on first failure
+                            
+            except subprocess.TimeoutExpired:
+                logging.error(f"⏰ Notebook {i} timed out after 1 hour")
+                all_successful = False
+                break
+            except Exception as e:
+                logging.error(f"💥 Unexpected error executing notebook {i}: {e}")
+                all_successful = False
+                break
+        
+        # Only record execution if all notebooks succeeded
+        if all_successful:
+            logging.info("\n✅ All notebooks completed successfully")
+            self.record_execution_date()
+        else:
+            logging.error("\n❌ Execution failed - will retry next scheduled time")
         
         logging.info("🏁 Weekly task execution finished")
         logging.info("=" * 50)
@@ -299,7 +326,9 @@ class SmartVenvScheduler:
         """Start the smart scheduler"""
         print("🤖 Smart Multi-Task Agent Scheduler")
         print("=" * 50)
-        print(f"📄 Multi-task agent: {SCRIPT_PATH}")
+        print(f"📓 Notebooks: {len(NOTEBOOKS)}")
+        for i, nb in enumerate(NOTEBOOKS, 1):
+            print(f"   {i}. {os.path.basename(nb)}")
         print(f"🐍 Python: {self.python_exe}")
         print(f"📁 Virtual env: {VENV_PATH}")
         print(f"📅 Schedule: Every {SCHEDULE_DAY.title()} at {SCHEDULE_TIME}")

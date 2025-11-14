@@ -33,11 +33,14 @@ cd /d "{script_dir}"
         # Check if it's a conda environment
         if "envs" in venv_path or "miniconda" in venv_path.lower() or "anaconda" in venv_path.lower():
             env_name = Path(venv_path).name
-            batch_content += f"""REM Activate conda environment
-call conda activate {env_name}
-if errorlevel 1 (
-    echo ERROR: Failed to activate conda environment
-    echo Environment: {env_name}
+            # Get conda base path and python executable
+            conda_base = str(Path(venv_path).parent.parent)
+            python_exe = f"{venv_path}\\python.exe"
+            batch_content += f"""REM Use conda environment python directly
+set PYTHON_EXE={python_exe}
+set PYTHONIOENCODING=utf-8
+if not exist "%PYTHON_EXE%" (
+    echo ERROR: Python not found at %PYTHON_EXE%
     timeout /t 30
     exit /b 1
 )
@@ -54,12 +57,16 @@ if errorlevel 1 (
     exit /b 1
 )
 
+
 """
     
-    batch_content += """REM Start the scheduler with auto-restart
+    # Determine which python command to use
+    python_cmd = '"%PYTHON_EXE%"' if venv_path and ("envs" in venv_path or "miniconda" in venv_path.lower() or "anaconda" in venv_path.lower()) else "python"
+    
+    batch_content += f"""REM Start the scheduler with auto-restart
 :start
 echo Starting scheduler at %date% %time%
-python smart_scheduler.py
+{python_cmd} smart_scheduler.py
 
 REM If scheduler exits, wait and restart
 echo Scheduler stopped at %date% %time%

@@ -724,3 +724,59 @@
 2025-11-14 14:28:53,620 - INFO - ==================================================
 2025-11-14 14:28:53,620 - INFO - 🚀 Smart scheduler started
 2025-11-14 14:28:53,620 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-14 14:43:48,247 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 14:43:48,263 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 14:43:48,426 - INFO - 🔍 Checking for missed execution...
+2025-11-14 14:43:48,426 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-14 14:43:48,426 - INFO -    Current time: 2025-11-14 14:43:48
+2025-11-14 14:43:48,426 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-14 14:43:48,426 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-14 14:43:48,426 - INFO - ==================================================
+2025-11-14 14:43:48,426 - INFO - 🚀 Weekly task execution check
+2025-11-14 14:43:48,426 - INFO - 📓 Notebooks: 2
+2025-11-14 14:43:48,426 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-14 14:43:48,426 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 14:43:48,426 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 14:43:48,426 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 14:43:48,437 - INFO - ⏰ Current time: 2025-11-14 14:43:48.437935
+2025-11-14 14:43:48,437 - INFO - 📅 No previous execution found - task will run
+2025-11-14 14:43:48,437 - INFO - ✅ Proceeding with weekly execution
+2025-11-14 14:43:48,437 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-14 14:43:48,440 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 14:43:48,442 - INFO - 🔄 Executing notebook...
+2025-11-14 14:44:42,142 - INFO - ✅ Notebook 1 completed successfully
+2025-11-14 14:44:42,142 - INFO - 📤 Output:
+2025-11-14 14:44:42,142 - INFO -    Already up to date.
+2025-11-14 14:44:42,142 - INFO - 
+📓 [2/2] Running: query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 14:44:42,142 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 14:44:42,142 - INFO - 🔄 Executing notebook...
+2025-11-14 14:44:49,409 - ERROR - ❌ Notebook 2 failed with return code: 1
+2025-11-14 14:44:49,409 - ERROR - 📤 Error output:
+2025-11-14 14:44:49,409 - ERROR -    import random
+2025-11-14 14:44:49,409 - ERROR -    import sys
+2025-11-14 14:44:49,409 - ERROR -    ------------------
+2025-11-14 14:44:49,409 - ERROR -    
+2025-11-14 14:44:49,409 - ERROR -    ----- stderr -----
+2025-11-14 14:44:49,409 - ERROR -    ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+2025-11-14 14:44:49,409 - ERROR -    ----- stdout -----
+2025-11-14 14:44:49,409 - ERROR -    ✅ Package installation examples shown above!
+2025-11-14 14:44:49,409 - ERROR -    ------------------
+2025-11-14 14:44:49,409 - ERROR -    
+2025-11-14 14:44:49,409 - ERROR -    [1;31m---------------------------------------------------------------------------[0m
+2025-11-14 14:44:49,409 - ERROR -    [1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+2025-11-14 14:44:49,409 - ERROR -    Cell [1;32mIn[1], line 10[0m
+2025-11-14 14:44:49,409 - ERROR -    [0;32m      8[0m [38;5;28;01mimport[39;00m [38;5;21;01msys[39;00m
+2025-11-14 14:44:49,409 - ERROR -    [0;32m      9[0m [38;5;28;01mimport[39;00m [38;5;21;01mrequests[39;00m
+2025-11-14 14:44:49,409 - ERROR -    [1;32m---> 10[0m [38;5;28;01mfrom[39;00m [38;5;21;01mdocx[39;00m [38;5;28;01mimport[39;00m Document
+2025-11-14 14:44:49,409 - ERROR -    [0;32m     11[0m [38;5;28;01mfrom[39;00m [38;5;21;01mdocx[39;00m[38;5;21;01m.[39;00m[38;5;21;01mshared[39;00m [38;5;28;01mimport[39;00m Pt, RGBColor
+2025-11-14 14:44:49,409 - ERROR -    [0;32m     12[0m [38;5;28;01mfrom[39;00m [38;5;21;01mdocx[39;00m[38;5;21;01m.[39;00m[38;5;21;01menum[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtext[39;00m [38;5;28;01mimport[39;00m WD_PARAGRAPH_ALIGNMENT
+2025-11-14 14:44:49,409 - ERROR -    
+2025-11-14 14:44:49,409 - ERROR -    [1;31mModuleNotFoundError[0m: No module named 'docx'
+2025-11-14 14:44:49,425 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-14 14:44:49,425 - INFO - 🏁 Weekly task execution finished
+2025-11-14 14:44:49,425 - INFO - ==================================================
+2025-11-14 14:44:49,425 - INFO - 🚀 Smart scheduler started
+2025-11-14 14:44:49,425 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00

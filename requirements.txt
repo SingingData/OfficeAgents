@@ -5,7 +5,7 @@ pandas
 matplotlib
 plotly
 yfinance
-docx
+python-docx
 openpyxl
 pickleshare
 beautifulsoup4
@@ -14,3 +14,4 @@ python-dotenv
 openai
 perplexityai
 shutil
+exceptions

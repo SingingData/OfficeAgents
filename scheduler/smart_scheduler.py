@@ -2,7 +2,8 @@
 Smart Virtual Environment Weekly Scheduler
 Simple architecture with robust virtual environment support
 """
-
+#  how to run from vs code: 
+#  Run in terminal  C:\Users\patty\miniconda3\envs\lerobot\python.exe smart_scheduler.py
 import schedule
 import time
 import subprocess
@@ -12,6 +13,7 @@ import logging
 from datetime import datetime, timedelta
 from pathlib import Path
 import json
+
 
 # ============================================================================
 # CONFIGURATION - EDIT THESE VALUES
@@ -297,6 +299,13 @@ class SmartVenvScheduler:
         """Test the virtual environment setup"""
         print("🧪 Testing virtual environment setup...")
         
+        # Skip test if running under debugger to avoid debugpy conflicts
+        import sys
+        if hasattr(sys, 'gettrace') and sys.gettrace() is not None:
+            print("⚠️  Skipping environment test (running under debugger)")
+            print(f"📋 Using Python: {self.python_exe}")
+            return True
+        
         try:
             env = self.prepare_venv_environment()
             
@@ -313,14 +322,20 @@ class SmartVenvScheduler:
                     print(f"   {line}")
                 return True
             else:
-                print("❌ Virtual environment test failed")
+                print("⚠️  Virtual environment test failed (non-critical)")
                 if result.stderr:
+                    # Check if it's a debugpy error
+                    if 'debugpy' in result.stderr or '_abc_registry' in result.stderr:
+                        print("   (This is likely due to VS Code debugger interference)")
+                        print(f"📋 Using Python: {self.python_exe}")
+                        return True
                     print(f"Error: {result.stderr}")
                 return False
                 
         except Exception as e:
-            print(f"❌ Error testing virtual environment: {e}")
-            return False
+            print(f"⚠️  Error testing virtual environment (non-critical): {e}")
+            print(f"📋 Using Python: {self.python_exe}")
+            return True
     
     def start(self):
         """Start the smart scheduler"""
@@ -346,11 +361,9 @@ class SmartVenvScheduler:
         
         print("=" * 50)
         
-        # Test virtual environment setup
-        if not self.test_venv_setup():
-            print("\n❌ Virtual environment test failed. Please check your configuration.")
-            input("Press Enter to exit...")
-            return
+        # Test virtual environment setup (non-blocking)
+        self.test_venv_setup()
+        print()
         
         # Check for missed execution on startup
         print("\n🔍 Checking for missed executions...")

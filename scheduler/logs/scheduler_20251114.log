@@ -126,3 +126,113 @@
 2025-11-14 12:53:47,628 - INFO - 🚀 Smart scheduler started
 2025-11-14 12:53:47,629 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
 2025-11-14 12:54:00,585 - INFO - 🛑 Scheduler stopped by user
+2025-11-14 13:00:10,720 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:00:10,726 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:00:10,794 - INFO - 🔍 Checking for missed execution...
+2025-11-14 13:00:10,795 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-14 13:00:10,795 - INFO -    Current time: 2025-11-14 13:00:10
+2025-11-14 13:00:10,796 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-14 13:00:10,796 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-14 13:00:10,796 - INFO - ==================================================
+2025-11-14 13:00:10,797 - INFO - 🚀 Weekly task execution check
+2025-11-14 13:00:10,797 - INFO - 📓 Notebooks: 2
+2025-11-14 13:00:10,797 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-14 13:00:10,797 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 13:00:10,797 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:00:10,798 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:00:10,798 - INFO - ⏰ Current time: 2025-11-14 13:00:10.798267
+2025-11-14 13:00:10,798 - INFO - 📅 No previous execution found - task will run
+2025-11-14 13:00:10,798 - INFO - ✅ Proceeding with weekly execution
+2025-11-14 13:00:10,798 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-14 13:00:10,798 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:00:10,798 - INFO - 🔄 Executing notebook...
+2025-11-14 13:00:11,009 - ERROR - ❌ Notebook 1 failed with return code: 1
+2025-11-14 13:00:11,024 - ERROR - 📤 Error output:
+2025-11-14 13:00:11,024 - ERROR -    Traceback (most recent call last):
+2025-11-14 13:00:11,025 - ERROR -      File "C:\Users\patty\miniconda3\envs\lerobot\lib\runpy.py", line 196, in _run_module_as_main
+2025-11-14 13:00:11,026 - ERROR -        return _run_code(code, main_globals, None,
+2025-11-14 13:00:11,026 - ERROR -      File "C:\Users\patty\miniconda3\envs\lerobot\lib\runpy.py", line 86, in _run_code
+2025-11-14 13:00:11,027 - ERROR -        exec(code, run_globals)
+2025-11-14 13:00:11,028 - ERROR -      File "C:\Users\patty\AppData\Roaming\Python\Python310\site-packages\jupyter.py", line 6, in <module>
+2025-11-14 13:00:11,028 - ERROR -        from jupyter_core.command import main
+2025-11-14 13:00:11,028 - ERROR -      File "C:\Users\patty\AppData\Roaming\Python\Python310\site-packages\jupyter_core\command.py", line 21, in <module>
+2025-11-14 13:00:11,030 - ERROR -        from typing import Any
+2025-11-14 13:00:11,030 - ERROR -      File "C:\Users\patty\miniconda3\envs\lerobot\Lib\site-packages\typing.py", line 1359, in <module>
+2025-11-14 13:00:11,031 - ERROR -        class Callable(extra=collections_abc.Callable, metaclass=CallableMeta):
+2025-11-14 13:00:11,031 - ERROR -      File "C:\Users\patty\miniconda3\envs\lerobot\Lib\site-packages\typing.py", line 1007, in __new__
+2025-11-14 13:00:11,032 - ERROR -        self._abc_registry = extra._abc_registry
+2025-11-14 13:00:11,032 - ERROR -    AttributeError: type object 'Callable' has no attribute '_abc_registry'
+2025-11-14 13:00:11,032 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-14 13:00:11,032 - INFO - 🏁 Weekly task execution finished
+2025-11-14 13:00:11,032 - INFO - ==================================================
+2025-11-14 13:00:11,033 - INFO - 🚀 Smart scheduler started
+2025-11-14 13:00:11,034 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-14 13:00:12,618 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:00:12,621 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:02:35,441 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:02:35,441 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:02:35,527 - INFO - 🔍 Checking for missed execution...
+2025-11-14 13:02:35,527 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-14 13:02:35,527 - INFO -    Current time: 2025-11-14 13:02:35
+2025-11-14 13:02:35,531 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-14 13:02:35,531 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-14 13:02:35,531 - INFO - ==================================================
+2025-11-14 13:02:35,533 - INFO - 🚀 Weekly task execution check
+2025-11-14 13:02:35,534 - INFO - 📓 Notebooks: 2
+2025-11-14 13:02:35,535 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-14 13:02:35,535 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 13:02:35,536 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:02:35,536 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:02:35,536 - INFO - ⏰ Current time: 2025-11-14 13:02:35.536656
+2025-11-14 13:02:35,538 - INFO - 📅 No previous execution found - task will run
+2025-11-14 13:02:35,538 - INFO - ✅ Proceeding with weekly execution
+2025-11-14 13:02:35,540 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-14 13:02:35,541 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:02:35,542 - INFO - 🔄 Executing notebook...
+2025-11-14 13:02:35,661 - ERROR - ❌ Notebook 1 failed with return code: 1
+2025-11-14 13:02:35,661 - ERROR - 📤 Error output:
+2025-11-14 13:02:35,661 - ERROR -    Traceback (most recent call last):
+2025-11-14 13:02:35,661 - ERROR -      File "C:\Users\patty\miniconda3\envs\lerobot\lib\runpy.py", line 196, in _run_module_as_main
+2025-11-14 13:02:35,661 - ERROR -        return _run_code(code, main_globals, None,
+2025-11-14 13:02:35,661 - ERROR -      File "C:\Users\patty\miniconda3\envs\lerobot\lib\runpy.py", line 86, in _run_code
+2025-11-14 13:02:35,661 - ERROR -        exec(code, run_globals)
+2025-11-14 13:02:35,661 - ERROR -      File "C:\Users\patty\AppData\Roaming\Python\Python310\site-packages\jupyter.py", line 6, in <module>
+2025-11-14 13:02:35,661 - ERROR -        from jupyter_core.command import main
+2025-11-14 13:02:35,661 - ERROR -      File "C:\Users\patty\AppData\Roaming\Python\Python310\site-packages\jupyter_core\command.py", line 21, in <module>
+2025-11-14 13:02:35,661 - ERROR -        from typing import Any
+2025-11-14 13:02:35,661 - ERROR -      File "C:\Users\patty\miniconda3\envs\lerobot\Lib\site-packages\typing.py", line 1359, in <module>
+2025-11-14 13:02:35,661 - ERROR -        class Callable(extra=collections_abc.Callable, metaclass=CallableMeta):
+2025-11-14 13:02:35,661 - ERROR -      File "C:\Users\patty\miniconda3\envs\lerobot\Lib\site-packages\typing.py", line 1007, in __new__
+2025-11-14 13:02:35,661 - ERROR -        self._abc_registry = extra._abc_registry
+2025-11-14 13:02:35,661 - ERROR -    AttributeError: type object 'Callable' has no attribute '_abc_registry'
+2025-11-14 13:02:35,661 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-14 13:02:35,661 - INFO - 🏁 Weekly task execution finished
+2025-11-14 13:02:35,661 - INFO - ==================================================
+2025-11-14 13:02:35,661 - INFO - 🚀 Smart scheduler started
+2025-11-14 13:02:35,661 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-14 13:04:26,948 - INFO - 🛑 Scheduler stopped by user
+2025-11-14 13:05:58,415 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:05:58,417 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:05:58,488 - INFO - 🔍 Checking for missed execution...
+2025-11-14 13:05:58,489 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-14 13:05:58,489 - INFO -    Current time: 2025-11-14 13:05:58
+2025-11-14 13:05:58,490 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-14 13:05:58,491 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-14 13:05:58,492 - INFO - ==================================================
+2025-11-14 13:05:58,492 - INFO - 🚀 Weekly task execution check
+2025-11-14 13:05:58,492 - INFO - 📓 Notebooks: 2
+2025-11-14 13:05:58,492 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-14 13:05:58,493 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-14 13:05:58,493 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-14 13:05:58,493 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:05:58,494 - INFO - ⏰ Current time: 2025-11-14 13:05:58.494296
+2025-11-14 13:05:58,494 - INFO - 📅 No previous execution found - task will run
+2025-11-14 13:05:58,494 - INFO - ✅ Proceeding with weekly execution
+2025-11-14 13:05:58,495 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-14 13:05:58,495 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-14 13:05:58,495 - INFO - 🔄 Executing notebook...

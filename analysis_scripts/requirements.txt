@@ -14,4 +14,4 @@ python-dotenv
 openai
 perplexityai
 shutil
-exceptions
+

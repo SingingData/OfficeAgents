@@ -13,5 +13,4 @@ requests
 python-dotenv
 openai
 perplexityai
-shutil
 

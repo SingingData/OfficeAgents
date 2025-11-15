@@ -238,15 +238,18 @@ class SmartVenvScheduler:
         for i, notebook_path in enumerate(NOTEBOOKS, 1):
             try:
                 logging.info(f"\n📓 [{i}/{len(NOTEBOOKS)}] Running: {os.path.basename(notebook_path)}")
-                
+
                 # Prepare virtual environment
                 env = self.prepare_venv_environment()
-                
+
                 # Get absolute path to notebook and its directory
                 notebook_abs = os.path.abspath(notebook_path)
                 notebook_dir = os.path.dirname(notebook_abs)
                 notebook_name = os.path.basename(notebook_abs)
-                
+
+                # Time the notebook execution
+                start_time = time.time()
+
                 # Execute notebook using jupyter nbconvert
                 # Must run from notebook directory for relative paths to work
                 logging.info(f"🔄 Executing notebook...")
@@ -257,38 +260,45 @@ class SmartVenvScheduler:
                     "--execute",
                     "--inplace",
                     notebook_name  # Use just the filename since we're running from notebook dir
-                ], 
-                capture_output=True, 
-                text=True, 
+                ],
+                capture_output=True,
+                text=True,
                 encoding='utf-8',
                 errors='replace',
                 timeout=3600,  # 1 hour timeout per notebook
                 cwd=notebook_dir,  # Run from notebook directory so relative paths work
                 env=env
                 )
-                
+
+                elapsed = time.time() - start_time
+                elapsed_str = f"{elapsed:.2f} seconds ({elapsed/60:.2f} min)"
+
                 # Log results
                 if result.returncode == 0:
-                    logging.info(f"✅ Notebook {i} completed successfully")
+                    logging.info(f"✅ Notebook {i} completed successfully in {elapsed_str}")
+                    print(f"✅ Notebook {i} completed in {elapsed_str}")
                     if result.stdout and result.stdout.strip():
                         logging.info("📤 Output:")
                         for line in result.stdout.strip().split('\n')[-10:]:  # Last 10 lines
                             logging.info(f"   {line}")
                 else:
-                    logging.error(f"❌ Notebook {i} failed with return code: {result.returncode}")
+                    logging.error(f"❌ Notebook {i} failed with return code: {result.returncode} after {elapsed_str}")
+                    print(f"❌ Notebook {i} failed after {elapsed_str}")
                     if result.stderr and result.stderr.strip():
                         logging.error("📤 Error output:")
                         for line in result.stderr.strip().split('\n')[-20:]:  # Last 20 lines
                             logging.error(f"   {line}")
                     all_successful = False
                     break  # Stop on first failure
-                            
+
             except subprocess.TimeoutExpired:
                 logging.error(f"⏰ Notebook {i} timed out after 1 hour")
+                print(f"⏰ Notebook {i} timed out after 1 hour")
                 all_successful = False
                 break
             except Exception as e:
                 logging.error(f"💥 Unexpected error executing notebook {i}: {e}")
+                print(f"💥 Unexpected error executing notebook {i}: {e}")
                 all_successful = False
                 break
         

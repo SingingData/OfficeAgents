@@ -19,18 +19,32 @@ import json
 # CONFIGURATION - EDIT THESE VALUES
 # ============================================================================
 
-# Your notebooks to run weekly (in order)
-NOTEBOOKS = [
-    r"C:\Users\patty\OfficeAgents_new\OfficeAgents\analysis_scripts\Integrated-portfolio-analysis.ipynb",
-    r"C:\Users\patty\OfficeAgents_new\OfficeAgents\analysis_scripts\query-perplexity-llm-stock-analysis.ipynb"
-]
+
+# Path to the text file listing notebooks to run (one per line)
+NOTEBOOKS_FILE = "notebooks_to_run.txt"
+
+def load_notebooks_list(file_path):
+    """Read notebook paths from a text file, ignoring empty lines and comments."""
+    notebooks = []
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('#'):
+                    notebooks.append(line)
+    except Exception as e:
+        print(f"❌ Failed to read notebooks list from {file_path}: {e}")
+        return []
+    return notebooks
+
+NOTEBOOKS = load_notebooks_list(NOTEBOOKS_FILE)
 
 # Virtual environment path (REQUIRED for reliable execution)
 VENV_PATH = r"C:\Users\patty\miniconda3\envs\lerobot"
 
 # Schedule settings - Multi-task agent runs once weekly
-SCHEDULE_DAY = "friday"  
-SCHEDULE_TIME = "12:10"  
+SCHEDULE_DAY = "Saturday"  
+SCHEDULE_TIME = "14:42"  
 
 # ============================================================================
 # SMART SCHEDULER - VIRTUAL ENVIRONMENT FOCUSED

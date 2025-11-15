@@ -259,3 +259,32 @@
 2025-11-15 09:09:21,502 - INFO - 🚀 Smart scheduler started
 2025-11-15 09:09:21,502 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
 2025-11-15 09:09:57,929 - INFO - 🛑 Scheduler stopped by user
+2025-11-15 14:39:08,420 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-15 14:39:08,469 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-15 14:39:08,553 - INFO - 🔍 Checking for missed execution...
+2025-11-15 14:39:08,553 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-15 14:39:08,553 - INFO -    Current time: 2025-11-15 14:39:08
+2025-11-15 14:39:08,553 - INFO - 📅 Already executed after scheduled time - no missed execution
+2025-11-15 14:39:08,562 - INFO - 🚀 Smart scheduler started
+2025-11-15 14:39:08,562 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-15 14:40:18,503 - INFO - 🛑 Scheduler stopped by user
+2025-11-15 14:41:04,818 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-15 14:41:04,822 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-15 14:41:04,885 - INFO - 🔍 Checking for missed execution...
+2025-11-15 14:41:04,885 - INFO -    Last scheduled time: 2025-11-11 14:42:00
+2025-11-15 14:41:04,885 - INFO -    Current time: 2025-11-15 14:41:04
+2025-11-15 14:41:04,885 - INFO - 📅 Already executed after scheduled time - no missed execution
+2025-11-15 14:41:04,885 - INFO - 🚀 Smart scheduler started
+2025-11-15 14:41:04,885 - INFO - 📅 Next scheduled execution: 2025-11-15 14:42:00
+2025-11-15 14:42:04,886 - INFO - ==================================================
+2025-11-15 14:42:04,887 - INFO - 🚀 Weekly task execution check
+2025-11-15 14:42:04,888 - INFO - 📓 Notebooks: 2
+2025-11-15 14:42:04,888 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-15 14:42:04,888 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-15 14:42:04,888 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-15 14:42:04,888 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-15 14:42:04,888 - INFO - ⏰ Current time: 2025-11-15 14:42:04.888458
+2025-11-15 14:42:04,888 - INFO - 📅 Last execution was 0 days ago - skipping (less than 7 days)
+2025-11-15 14:42:04,888 - INFO - ⏭️  Skipping execution - already ran this week
+2025-11-15 14:42:04,888 - INFO - ==================================================
+2025-11-15 14:43:41,124 - INFO - 🛑 Scheduler stopped by user

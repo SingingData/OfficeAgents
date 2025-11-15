@@ -165,3 +165,60 @@
 2025-11-15 08:37:53,028 - INFO - 🚀 Smart scheduler started
 2025-11-15 08:37:53,030 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
 2025-11-15 08:38:45,904 - INFO - 🛑 Scheduler stopped by user
+2025-11-15 09:02:02,233 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-15 09:02:02,233 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-15 09:02:02,331 - INFO - 🔍 Checking for missed execution...
+2025-11-15 09:02:02,331 - INFO -    Last scheduled time: 2025-11-11 12:10:00
+2025-11-15 09:02:02,331 - INFO -    Current time: 2025-11-15 09:02:02
+2025-11-15 09:02:02,331 - INFO - 📅 No previous execution found and scheduled time has passed - will run immediately
+2025-11-15 09:02:02,331 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-15 09:02:02,331 - INFO - ==================================================
+2025-11-15 09:02:02,331 - INFO - 🚀 Weekly task execution check
+2025-11-15 09:02:02,331 - INFO - 📓 Notebooks: 2
+2025-11-15 09:02:02,341 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-15 09:02:02,341 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-15 09:02:02,341 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-15 09:02:02,341 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-15 09:02:02,342 - INFO - ⏰ Current time: 2025-11-15 09:02:02.342474
+2025-11-15 09:02:02,342 - INFO - 📅 No previous execution found - task will run
+2025-11-15 09:02:02,342 - INFO - ✅ Proceeding with weekly execution
+2025-11-15 09:02:02,342 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-15 09:02:02,342 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-15 09:02:02,342 - INFO - 🔄 Executing notebook...
+2025-11-15 09:03:41,398 - INFO - ✅ Notebook 1 completed successfully in 99.06 seconds (1.65 min)
+2025-11-15 09:03:41,398 - INFO - 📤 Output:
+2025-11-15 09:03:41,398 - INFO -    Already up to date.
+2025-11-15 09:03:41,398 - INFO - 
+📓 [2/2] Running: query-perplexity-llm-stock-analysis.ipynb
+2025-11-15 09:03:41,398 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-15 09:03:41,398 - INFO - 🔄 Executing notebook...
+2025-11-15 09:04:12,785 - ERROR - ❌ Notebook 2 failed with return code: 1 after 31.39 seconds (0.52 min)
+2025-11-15 09:04:12,785 - ERROR - 📤 Error output:
+2025-11-15 09:04:12,785 - ERROR -    # Model Configuration
+2025-11-15 09:04:12,785 - ERROR -    MODEL = "sonar-pro" 
+2025-11-15 09:04:12,785 - ERROR -    TEMPERATURE = 0
+2025-11-15 09:04:12,785 - ERROR -    MAX_TOKENS = 2000
+2025-11-15 09:04:12,785 - ERROR -    
+2025-11-15 09:04:12,785 - ERROR -    ------------------
+2025-11-15 09:04:12,785 - ERROR -    
+2025-11-15 09:04:12,785 - ERROR -    
+2025-11-15 09:04:12,785 - ERROR -    [1;31m---------------------------------------------------------------------------[0m
+2025-11-15 09:04:12,785 - ERROR -    [1;31mTypeError[0m                                 Traceback (most recent call last)
+2025-11-15 09:04:12,785 - ERROR -    Cell [1;32mIn[2], line 21[0m
+2025-11-15 09:04:12,785 - ERROR -    [0;32m     19[0m OUTPUT_DIR [38;5;241m=[39m os[38;5;241m.[39mgetenv([38;5;124m"[39m[38;5;124mOutput_dir[39m[38;5;124m"[39m)
+2025-11-15 09:04:12,790 - ERROR -    [0;32m     20[0m PROMPT_DIR [38;5;241m=[39m os[38;5;241m.[39mgetenv([38;5;124m"[39m[38;5;124mPrompt_dir[39m[38;5;124m"[39m)
+2025-11-15 09:04:12,790 - ERROR -    [1;32m---> 21[0m EQUITY_LIST_FILE [38;5;241m=[39m [43mos[49m[38;5;241;43m.[39;49m[43mpath[49m[38;5;241;43m.[39;49m[43mjoin[49m[43m([49m[43mINPUT_DIR[49m[43m,[49m[43m [49m[38;5;124;43m"[39;49m[38;5;124;43mEquity_list_test.txt[39;49m[38;5;124;43m"[39;49m[43m)[49m[38;5;241m.[39mreplace([38;5;124m'[39m[38;5;130;01m\\[39;00m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124m/[39m[38;5;124m'[39m)
+2025-11-15 09:04:12,790 - ERROR -    [0;32m     22[0m PROMPT_FILE [38;5;241m=[39m os[38;5;241m.[39mpath[38;5;241m.[39mjoin(PROMPT_DIR, [38;5;124m"[39m[38;5;124mIndividual_analysis_prompt.txt[39m[38;5;124m"[39m)
+2025-11-15 09:04:12,790 - ERROR -    [0;32m     24[0m [38;5;66;03m# Read stock list from file[39;00m
+2025-11-15 09:04:12,790 - ERROR -    
+2025-11-15 09:04:12,790 - ERROR -    File [1;32m<frozen ntpath>:108[0m, in [0;36mjoin[1;34m(path, *paths)[0m
+2025-11-15 09:04:12,790 - ERROR -    
+2025-11-15 09:04:12,790 - ERROR -    [1;31mTypeError[0m: expected str, bytes or os.PathLike object, not NoneType
+2025-11-15 09:04:12,790 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-15 09:04:12,790 - INFO - 🏁 Weekly task execution finished
+2025-11-15 09:04:12,793 - INFO - ==================================================
+2025-11-15 09:04:12,793 - INFO - 🚀 Smart scheduler started
+2025-11-15 09:04:12,793 - INFO - 📅 Next scheduled execution: 2025-11-21 12:10:00
+2025-11-15 09:05:04,251 - INFO - 🛑 Scheduler stopped by user

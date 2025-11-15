@@ -288,3 +288,12 @@
 2025-11-15 14:42:04,888 - INFO - ⏭️  Skipping execution - already ran this week
 2025-11-15 14:42:04,888 - INFO - ==================================================
 2025-11-15 14:43:41,124 - INFO - 🛑 Scheduler stopped by user
+2025-11-15 14:57:35,532 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-15 14:57:35,534 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-15 14:57:35,602 - INFO - 🔍 Checking for missed execution...
+2025-11-15 14:57:35,602 - INFO -    Last scheduled time: 2025-11-11 14:42:00
+2025-11-15 14:57:35,602 - INFO -    Current time: 2025-11-15 14:57:35
+2025-11-15 14:57:35,602 - INFO - 📅 Already executed after scheduled time - no missed execution
+2025-11-15 14:57:35,610 - INFO - 🚀 Smart scheduler started
+2025-11-15 14:57:35,610 - INFO - 📅 Next scheduled execution: 2025-11-22 14:42:00
+2025-11-15 14:58:16,719 - INFO - 🛑 Scheduler stopped by user

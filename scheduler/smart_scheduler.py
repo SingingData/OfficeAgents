@@ -4,6 +4,7 @@ Simple architecture with robust virtual environment support
 """
 #  how to run from vs code: 
 #  Run in terminal  C:\Users\patty\miniconda3\envs\lerobot\python.exe smart_scheduler.py
+
 import schedule
 import time
 import subprocess
@@ -13,6 +14,7 @@ import logging
 from datetime import datetime, timedelta
 from pathlib import Path
 import json
+from dotenv import load_dotenv
 
 
 # ============================================================================
@@ -20,24 +22,32 @@ import json
 # ============================================================================
 
 
-# Path to the text file listing notebooks to run (one per line)
+# Path to the text file listing notebook filenames (one per line)
 NOTEBOOKS_FILE = "notebooks_to_run.txt"
 
-def load_notebooks_list(file_path):
-    """Read notebook paths from a text file, ignoring empty lines and comments."""
+# Load .env file for NOTEBOOKS_SOURCE_DIR
+load_dotenv()
+NOTEBOOKS_SOURCE_DIR = os.getenv("NOTEBOOKS_SOURCE_DIR")
+if not NOTEBOOKS_SOURCE_DIR:
+    print("❌ NOTEBOOKS_SOURCE_DIR not set in .env file!")
+    NOTEBOOKS_SOURCE_DIR = ""
+
+def load_notebooks_list(file_path, source_dir):
+    """Read notebook filenames from a text file and join with source_dir."""
     notebooks = []
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             for line in f:
                 line = line.strip()
                 if line and not line.startswith('#'):
-                    notebooks.append(line)
+                    # Join the source directory with the filename
+                    notebooks.append(str(Path(source_dir) / line))
     except Exception as e:
         print(f"❌ Failed to read notebooks list from {file_path}: {e}")
         return []
     return notebooks
 
-NOTEBOOKS = load_notebooks_list(NOTEBOOKS_FILE)
+NOTEBOOKS = load_notebooks_list(NOTEBOOKS_FILE, NOTEBOOKS_SOURCE_DIR)
 
 # Virtual environment path (REQUIRED for reliable execution)
 VENV_PATH = r"C:\Users\patty\miniconda3\envs\lerobot"

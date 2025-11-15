@@ -1,3 +1,3 @@
 # List of notebooks to run in the smart scheduler (one per line)
-C:\Users\patty\OfficeAgents_new\OfficeAgents\analysis_scripts\Integrated-portfolio-analysis.ipynb
-C:\Users\patty\OfficeAgents_new\OfficeAgents\analysis_scripts\query-perplexity-llm-stock-analysis.ipynb
+Integrated-portfolio-analysis.ipynb
+query-perplexity-llm-stock-analysis.ipynb

@@ -28,13 +28,12 @@ Installer to put the scheduler into the start-up 'smart-installer.py'
 
 2. Get your LLM keys and set up local directories as per below.  
 
-3. Put the following (with your custom information) in your local .env file that you've just created.
+3. Put the following text (with your custom keys and folder locations information) in your local .env file that you've just created.
 
-4. 
 ##### Perplexity API Key
 PERPLEXITY_API_KEY=put your api key here
 
-##### OpenAI API Key
+##### OpenAI API Key - Optional
 OPENAI_API_KEY=put your api key here
 
 ##### Directory Locations - LLM Queries

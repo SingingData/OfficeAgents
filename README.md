@@ -29,6 +29,8 @@ Installer to put the scheduler into the start-up 'smart-installer.py'
 2. Get your LLM keys and set up local directories as per below.  
 
 3. Put the following (with your custom information) in your local .env file that you've just created.
+
+4. 
 ##### Perplexity API Key
 PERPLEXITY_API_KEY=put your api key here
 
@@ -39,6 +41,7 @@ OPENAI_API_KEY=put your api key here
 Input_dir=C:/directory to your inputs including equity list txt file
 Prompt_dir =C:/directory to your prompt input txt files
 Output_dir =C:/Users/patty/portfolio_files/Individual_stock_analysis
+
 
 4.  Be sure to copy some of the sample prompts from the root level into your preferred Prompt_dir that you identified above.
 5.  Be sure to create a text file (equity_list.txt) in a folder within Input_dir under a folder entitled 'Equity_list' and put your equity tickers in this txt file.  (one ticker on each line)

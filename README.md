@@ -2,7 +2,7 @@
 Repository for code invoked by office agents
 
 ## Analysis Scripts:
-0 Clean up for portfolio download excel.
+0 Clean up for portfolio download excel. 'integrated portfolio analysis'
 
 1  Portfolio Analysis with Perplexity LLM
 

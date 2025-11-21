@@ -1,0 +1,20 @@
+2025-11-19 12:01:29,294 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-19 12:01:29,330 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-19 12:01:29,434 - INFO - 🔍 Checking for missed execution...
+2025-11-19 12:01:29,434 - INFO -    Last scheduled time: 2025-11-18 17:32:00
+2025-11-19 12:01:29,434 - INFO -    Current time: 2025-11-19 12:01:29
+2025-11-19 12:01:29,434 - INFO - 📅 Last execution (2025-11-15 09:09:21) was before scheduled time - will run immediately
+2025-11-19 12:01:29,434 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-19 12:01:29,450 - INFO - ==================================================
+2025-11-19 12:01:29,450 - INFO - 🚀 Weekly task execution check
+2025-11-19 12:01:29,450 - INFO - 📓 Notebooks: 2
+2025-11-19 12:01:29,450 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-19 12:01:29,450 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-19 12:01:29,454 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-19 12:01:29,454 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-19 12:01:29,454 - INFO - ⏰ Current time: 2025-11-19 12:01:29.454459
+2025-11-19 12:01:29,454 - INFO - 📅 Last execution was 4 days ago - skipping (less than 7 days)
+2025-11-19 12:01:29,454 - INFO - ⏭️  Skipping execution - already ran this week
+2025-11-19 12:01:29,454 - INFO - ==================================================
+2025-11-19 12:01:29,454 - INFO - 🚀 Smart scheduler started
+2025-11-19 12:01:29,454 - INFO - 📅 Next scheduled execution: 2025-11-23 17:32:00

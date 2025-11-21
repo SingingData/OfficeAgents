@@ -1,0 +1,16 @@
+2025-11-17 07:36:54,255 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-17 07:36:54,281 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-17 07:36:54,352 - INFO - 🔍 Checking for missed execution...
+2025-11-17 07:36:54,352 - INFO -    Last scheduled time: 2025-11-11 17:32:00
+2025-11-17 07:36:54,352 - INFO -    Current time: 2025-11-17 07:36:54
+2025-11-17 07:36:54,352 - INFO - 📅 Already executed after scheduled time - no missed execution
+2025-11-17 07:36:54,352 - INFO - 🚀 Smart scheduler started
+2025-11-17 07:36:54,352 - INFO - 📅 Next scheduled execution: 2025-11-23 17:32:00
+2025-11-17 13:30:02,184 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-17 13:30:02,210 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-17 13:30:02,284 - INFO - 🔍 Checking for missed execution...
+2025-11-17 13:30:02,284 - INFO -    Last scheduled time: 2025-11-11 17:32:00
+2025-11-17 13:30:02,284 - INFO -    Current time: 2025-11-17 13:30:02
+2025-11-17 13:30:02,284 - INFO - 📅 Already executed after scheduled time - no missed execution
+2025-11-17 13:30:02,300 - INFO - 🚀 Smart scheduler started
+2025-11-17 13:30:02,300 - INFO - 📅 Next scheduled execution: 2025-11-23 17:32:00

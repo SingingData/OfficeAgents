@@ -53,8 +53,8 @@ NOTEBOOKS = load_notebooks_list(NOTEBOOKS_FILE, NOTEBOOKS_SOURCE_DIR)
 VENV_PATH = r"C:\Users\patty\miniconda3\envs\lerobot"
 
 # Schedule settings - Multi-task agent runs once weekly
-SCHEDULE_DAY = "Saturday"  
-SCHEDULE_TIME = "14:42"  
+SCHEDULE_DAY = "Sunday"  
+SCHEDULE_TIME = "17:32"  
 
 # ============================================================================
 # SMART SCHEDULER - VIRTUAL ENVIRONMENT FOCUSED

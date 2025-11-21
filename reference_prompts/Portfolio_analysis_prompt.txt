@@ -1,0 +1,21 @@
+"Taking all of these equities and other types of funds a comprehensive portfolio analysis covering the following equity and fund tickers:
+
+
+Sort the table by industry category. For each ticker, include columns for:
+
+    Investment category/industry
+
+    PE ratio (TTM)
+
+    ROE (%)
+
+    Dividend yield (%)
+
+    Most recent revenue figure (USD billions)
+
+    Beta
+
+    Analyst recommendation
+
+
+If available, also note whether the ticker is an ETF or mutual fund or other type of asset. Use ETF averages or top constituent weights when individual metrics are unavailable. Format the result as a markdown table for easy review."

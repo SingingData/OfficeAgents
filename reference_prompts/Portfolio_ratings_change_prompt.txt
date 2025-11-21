@@ -1,0 +1,1 @@
+"Check these tickers listed. For each, provide the number of analyst upgrades and downgrades in the last week, and the current consensus analyst rating as well as a synopsis of the consensus analysis. List results by ticker."

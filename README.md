@@ -36,10 +36,12 @@ PERPLEXITY_API_KEY=put your api key here
 ##### OpenAI API Key - Optional
 OPENAI_API_KEY=put your api key here
 
-##### Directory Locations - LLM Queries
+##### Directory Locations 
 Input_dir=C:/directory to your inputs including equity list txt file
 Prompt_dir =C:/directory to your prompt input txt files
 Output_dir =C:/Users/patty/portfolio_files/Individual_stock_analysis
+BROKER = "put your folder name here within 'Input_dir' folder
+
 
 
 4.  Be sure to copy some of the sample prompts from the root level into your preferred Prompt_dir that you identified above.

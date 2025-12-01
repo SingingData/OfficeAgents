@@ -1,4 +1,78 @@
-give me a Brian Belsky style stock analysis for this actual stock market stock in a 3 page or less format. 
-Insert a chart at the top with trailing 5 year stock price performance of this stock vs. the 
-Nasdaq as well as a table of all the key financial metrics for this stock. Make certain all of the facts are correct.  
-If available, please add analyst ratings and price targets for this stock or mutual fund.  
+Analyze this stock using the 13-point framework below.
+- Use only verifiable, factual information (annual reports, investor presentations, filings, earnings transcripts, and reputable financial sources).
+- Be concise, analytical, and concrete, with no filler or marketing language.
+
+Output format (exact structure required):
+
+Executive Summary (about 150–200 words)
+Summarize in plain English how this company makes money, its economic quality, and where its edge and risks lie.
+End with one sentence that describes the business to an investor in one line.
+
+1. What They Sell and Who Buys
+* Describe the main products or services.
+* Define target customers by type, segment, and geography, and why they buy, including the main pain point or motivation.
+
+2. How They Make Money
+* Explain the revenue model and pricing logic.
+* Clarify whether revenues are one-time, recurring, transaction-based, or hybrid.
+* Include key revenue segments and their share if available.
+
+3. Revenue Quality
+* Assess how predictable and diversified revenues are.
+* Break down recurring versus one-off components, customer or segment concentration, and exposure to economic cycles.
+
+
+4. Cost Structure
+* Outline major cost drivers, such as COGS, labor, logistics, marketing.
+* Include gross and operating margins where possible.
+* Comment on scalability, fixed versus variable costs, and how margins move with growth.
+
+
+5. Capital Intensity
+* Describe the assets needed to run and grow operations.
+* Include capital expenditure levels, working capital needs, and cash conversion efficiency.
+
+
+6. Growth Drivers
+* Identify the main levers for revenue growth, such as volume, pricing, product mix, geographic expansion, or acquisitions.
+* Clarify whether each driver is structural and long term or cyclical and short term.
+
+
+7. Competitive Edge
+* Explain what protects the company’s economics from competition, such as brand, cost advantage, switching costs, regulation, network effects, data, or intellectual property.
+* Discuss how durable and testable this moat appears, using financial evidence such as margins, ROIC, or customer retention.
+
+
+8. Industry Structure and Position
+* Describe the industry value chain and where profit pools sit.
+* Explain market structure, for example fragmented or consolidated, presence of pricing power, and key regulatory factors.
+* Place the company within this context, including market share, relative scale, and whether it acts as a price setter, a price taker, a niche specialist, or a platform.
+
+9. Unit Economics and Key KPIs
+* Present unit economics at the relevant level, such as per customer, store, device, transaction, or cohort.
+* Include metrics such as CAC, LTV, churn or retention, ARPU, utilization, occupancy, and payback periods where applicable.
+* Comment on whether these unit economics and KPIs are improving, stable, or weakening over time.
+
+
+10. Capital Allocation and Balance Sheet
+* Summarize historical capital allocation across organic investment, acquisitions, buybacks, dividends, and debt reduction.
+* Describe balance sheet strength, including leverage, debt maturity profile, liquidity, and any major off balance sheet obligations.
+* Assess whether capital allocation has likely created or destroyed value.
+
+11. Risks and Failure Modes
+* Identify key risks, such as competitive, technological, regulatory, macroeconomic, customer concentration, or currency exposure.
+* Describe in simple terms how the equity story could fail, and what would need to happen for this to occur.
+* Highlight areas where uncertainty is especially high or information is limited.
+
+12. Valuation and Expected Return Profile
+* Compare current valuation with the company’s own history and with peers, using the metrics that best fit this business, such as P/E, EV/EBIT, EV/Sales, FCF yield.
+* Provide a simple scenario framework with bear, base, and bull cases, including rough assumptions and implied upside or downside.
+* State explicitly what must be true for the current price to be attractive, fair, or expensive.
+
+13. Catalysts and Time Horizon
+* List near and medium term catalysts, such as product launches, margin inflection, regulatory events, refinancing, or index changes.
+* Note any slow building catalysts, such as mix shift or operating leverage that accumulates over time.
+* Explain the expected time horizon for the thesis to play out and how the market is likely to recognize the value if the thesis is correct.
+
+Tone: Analytical, neutral, precise.
+Goal: Produce a concise yet rich narrative that lets an investor understand how this business works, how resilient and valuable its economics are, and whether the stock looks attractive at today’s price.

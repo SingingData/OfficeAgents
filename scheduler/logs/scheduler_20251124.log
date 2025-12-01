@@ -47,3 +47,52 @@
 2025-11-24 07:41:22,643 - INFO - ==================================================
 2025-11-24 07:41:22,643 - INFO - 🚀 Smart scheduler started
 2025-11-24 07:41:22,643 - INFO - 📅 Next scheduled execution: 2025-11-30 17:32:00
+2025-11-24 09:22:20,248 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-24 09:22:20,285 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-24 09:22:20,381 - INFO - 🔍 Checking for missed execution...
+2025-11-24 09:22:20,383 - INFO -    Last scheduled time: 2025-11-18 17:32:00
+2025-11-24 09:22:20,383 - INFO -    Current time: 2025-11-24 09:22:20
+2025-11-24 09:22:20,383 - INFO - 📅 Last execution (2025-11-15 09:09:21) was before scheduled time - will run immediately
+2025-11-24 09:22:20,383 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-11-24 09:22:20,383 - INFO - ==================================================
+2025-11-24 09:22:20,383 - INFO - 🚀 Weekly task execution check
+2025-11-24 09:22:20,385 - INFO - 📓 Notebooks: 2
+2025-11-24 09:22:20,385 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-11-24 09:22:20,385 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-11-24 09:22:20,385 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-11-24 09:22:20,385 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-24 09:22:20,385 - INFO - ⏰ Current time: 2025-11-24 09:22:20.385520
+2025-11-24 09:22:20,385 - INFO - 📅 Last execution was 9 days ago - task will run
+2025-11-24 09:22:20,385 - INFO - ✅ Proceeding with weekly execution
+2025-11-24 09:22:20,387 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-11-24 09:22:20,387 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-11-24 09:22:20,387 - INFO - 🔄 Executing notebook...
+2025-11-24 09:23:13,276 - ERROR - ❌ Notebook 1 failed with return code: 1 after 52.89 seconds (0.88 min)
+2025-11-24 09:23:13,276 - ERROR - 📤 Error output:
+2025-11-24 09:23:13,276 - ERROR -    [0;32m     25[0m [38;5;66;03m# Create a dictionary for fast lookup: {Ticker: Price}[39;00m
+2025-11-24 09:23:13,280 - ERROR -    [1;32m---> 26[0m price_lookup [38;5;241m=[39m [38;5;28mdict[39m([38;5;28mzip[39m([43mresult_df[49m[43m[[49m[38;5;124;43m'[39;49m[38;5;124;43mTicker[39;49m[38;5;124;43m'[39;49m[43m][49m, result_df[[38;5;124m'[39m[38;5;124mPrice[39m[38;5;124m'[39m]))
+2025-11-24 09:23:13,280 - ERROR -    [0;32m     28[0m [38;5;66;03m# Update df_data['Last Price'] for matching tickers[39;00m
+2025-11-24 09:23:13,280 - ERROR -    [0;32m     29[0m updated_count [38;5;241m=[39m [38;5;241m0[39m
+2025-11-24 09:23:13,280 - ERROR -    
+2025-11-24 09:23:13,281 - ERROR -    File [1;32m~\miniconda3\Lib\site-packages\pandas\core\frame.py:4102[0m, in [0;36mDataFrame.__getitem__[1;34m(self, key)[0m
+2025-11-24 09:23:13,281 - ERROR -    [0;32m   4100[0m [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mcolumns[38;5;241m.[39mnlevels [38;5;241m>[39m [38;5;241m1[39m:
+2025-11-24 09:23:13,281 - ERROR -    [0;32m   4101[0m     [38;5;28;01mreturn[39;00m [38;5;28mself[39m[38;5;241m.[39m_getitem_multilevel(key)
+2025-11-24 09:23:13,281 - ERROR -    [1;32m-> 4102[0m indexer [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mcolumns[49m[38;5;241;43m.[39;49m[43mget_loc[49m[43m([49m[43mkey[49m[43m)[49m
+2025-11-24 09:23:13,281 - ERROR -    [0;32m   4103[0m [38;5;28;01mif[39;00m is_integer(indexer):
+2025-11-24 09:23:13,281 - ERROR -    [0;32m   4104[0m     indexer [38;5;241m=[39m [indexer]
+2025-11-24 09:23:13,281 - ERROR -    
+2025-11-24 09:23:13,281 - ERROR -    File [1;32m~\miniconda3\Lib\site-packages\pandas\core\indexes\range.py:417[0m, in [0;36mRangeIndex.get_loc[1;34m(self, key)[0m
+2025-11-24 09:23:13,281 - ERROR -    [0;32m    415[0m         [38;5;28;01mraise[39;00m [38;5;167;01mKeyError[39;00m(key) [38;5;28;01mfrom[39;00m [38;5;21;01merr[39;00m
+2025-11-24 09:23:13,281 - ERROR -    [0;32m    416[0m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(key, Hashable):
+2025-11-24 09:23:13,281 - ERROR -    [1;32m--> 417[0m     [38;5;28;01mraise[39;00m [38;5;167;01mKeyError[39;00m(key)
+2025-11-24 09:23:13,281 - ERROR -    [0;32m    418[0m [38;5;28mself[39m[38;5;241m.[39m_check_indexing_error(key)
+2025-11-24 09:23:13,281 - ERROR -    [0;32m    419[0m [38;5;28;01mraise[39;00m [38;5;167;01mKeyError[39;00m(key)
+2025-11-24 09:23:13,281 - ERROR -    
+2025-11-24 09:23:13,281 - ERROR -    [1;31mKeyError[0m: 'Ticker'
+2025-11-24 09:23:13,281 - ERROR - 
+❌ Execution failed - will retry next scheduled time
+2025-11-24 09:23:13,281 - INFO - 🏁 Weekly task execution finished
+2025-11-24 09:23:13,281 - INFO - ==================================================
+2025-11-24 09:23:13,281 - INFO - 🚀 Smart scheduler started
+2025-11-24 09:23:13,281 - INFO - 📅 Next scheduled execution: 2025-11-30 17:32:00

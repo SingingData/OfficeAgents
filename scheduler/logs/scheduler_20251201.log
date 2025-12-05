@@ -1,0 +1,36 @@
+2025-12-01 09:31:58,995 - INFO - ✓ Using conda environment Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-12-01 09:31:59,039 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-12-01 09:31:59,105 - INFO - 🔍 Checking for missed execution...
+2025-12-01 09:31:59,105 - INFO -    Last scheduled time: 2025-11-25 17:32:00
+2025-12-01 09:31:59,105 - INFO -    Current time: 2025-12-01 09:31:59
+2025-12-01 09:31:59,105 - INFO - 📅 Last execution (2025-11-15 09:09:21) was before scheduled time - will run immediately
+2025-12-01 09:31:59,105 - INFO - ⚡ Missed execution detected on startup - running immediately
+2025-12-01 09:31:59,105 - INFO - ==================================================
+2025-12-01 09:31:59,105 - INFO - 🚀 Weekly task execution check
+2025-12-01 09:31:59,105 - INFO - 📓 Notebooks: 2
+2025-12-01 09:31:59,105 - INFO -    1. Integrated-portfolio-analysis.ipynb
+2025-12-01 09:31:59,105 - INFO -    2. query-perplexity-llm-stock-analysis.ipynb
+2025-12-01 09:31:59,105 - INFO - 🐍 Python: C:\Users\patty\miniconda3\envs\lerobot\python.exe
+2025-12-01 09:31:59,105 - INFO - 📁 Virtual env: C:\Users\patty\miniconda3\envs\lerobot
+2025-12-01 09:31:59,105 - INFO - ⏰ Current time: 2025-12-01 09:31:59.105206
+2025-12-01 09:31:59,105 - INFO - 📅 Last execution was 16 days ago - task will run
+2025-12-01 09:31:59,114 - INFO - ✅ Proceeding with weekly execution
+2025-12-01 09:31:59,114 - INFO - 
+📓 [1/2] Running: Integrated-portfolio-analysis.ipynb
+2025-12-01 09:31:59,114 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-12-01 09:31:59,114 - INFO - 🔄 Executing notebook...
+2025-12-01 09:33:08,407 - INFO - ✅ Notebook 1 completed successfully in 69.29 seconds (1.15 min)
+2025-12-01 09:33:08,407 - INFO - 📤 Output:
+2025-12-01 09:33:08,407 - INFO -    Already up to date.
+2025-12-01 09:33:08,407 - INFO - 
+📓 [2/2] Running: query-perplexity-llm-stock-analysis.ipynb
+2025-12-01 09:33:08,410 - INFO - ✓ Environment prepared for virtual environment: C:\Users\patty\miniconda3\envs\lerobot
+2025-12-01 09:33:08,410 - INFO - 🔄 Executing notebook...
+2025-12-01 09:37:39,877 - INFO - ✅ Notebook 2 completed successfully in 271.47 seconds (4.52 min)
+2025-12-01 09:37:39,879 - INFO - 
+✅ All notebooks completed successfully
+2025-12-01 09:37:39,880 - INFO - ✓ Execution date recorded: 2025-12-01 09:37:39
+2025-12-01 09:37:39,880 - INFO - 🏁 Weekly task execution finished
+2025-12-01 09:37:39,880 - INFO - ==================================================
+2025-12-01 09:37:39,882 - INFO - 🚀 Smart scheduler started
+2025-12-01 09:37:39,883 - INFO - 📅 Next scheduled execution: 2025-12-07 17:32:00
